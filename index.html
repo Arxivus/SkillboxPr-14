@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-block">
+
+      <form id="film-form">
+        <label for="title">Название:</label><br />
+        <input type="text" id="title" name="title" required/><br />
+        <label for="genre">Жанр:</label><br />
+        <input type="text" id="genre" name="genre" required/><br />
+        <label for="releaseYear">Год:</label><br />
+        <input type="text" id="releaseYear" name="releaseYear" required/><br />
+        <input type="checkbox" id="isWatched" name="isWatched"/>
+        <label for="isWatched">Успели посмотреть?</label><br />
+  
+        <button class="add-button" type="submit">Добавить</button>
+      </form>
+
+      <div class="update-film">
+        <button class="update">Обновить</button>
+        <button class="stop-edit">Отменить редактирование</button>
+      </div>
+      
+    </div>
+    <div class="sort">
+      <select class="sort-params">
+        <option>Название</option>
+        <option>Жанр</option>
+        <option>Год</option>
+      </select>
+      <button class="sort-table">Сортировать</button>
+    </div>
+    
+    <table id="film-table">
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Жанр</th>
+          <th>Год</th>
+          <th>Успели посмотреть?</th>
+          <th>Действие</th>
+        </tr>
+      </thead>
+      <tbody id="film-tbody">
+        <!-- Rows will be inserted here -->
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
